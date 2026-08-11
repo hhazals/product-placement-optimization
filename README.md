@@ -32,24 +32,6 @@ CP-SAT, and visualizes the resulting planogram.
                   reads assignment.json at runtime — rerun step 4 to update
 ```
 
-## Correction: Step 3 was never a separate notebook
-
-Earlier revisions of this README said the lot-generation/merge step ("Step
-3") was a missing notebook. That was wrong — `notebooks/02_location_effectiveness`
-already builds and scores the lot-level table (`lots_df`) in the same
-notebook as the area effectiveness scoring. See
-[`notebooks/03_lot_merge/README.md`](notebooks/03_lot_merge/README.md) for
-the full correction, plus a real bug that *was* found and fixed there (a
-hardcoded 3-row placeholder was silently breaking the area-score merge for
-almost every lot — fixed and verified to reproduce the existing 563-lot
-`lots_with_Aij.xlsx` exactly).
-
-\* `lots_with_Aij.xlsx` is marked with an asterisk above because the notebook
-computes `lots_df` fully but doesn't yet have the export cell that writes it
-to that exact file/format — a small addition, not a missing notebook. The
-file in `data/03_processed/` today is a previously generated, verified-consistent
-copy.
-
 ## Running it
 
 ### Notebooks (steps 1, 2, 4)
@@ -74,6 +56,7 @@ npm install
 npm run dev
 ```
 
+AŞKOLAR
 Opens the interactive planogram at `http://localhost:5173`, reading
 `public/data/assignment.json`. To refresh the visualization after a new
 solve, just rerun the last cell of `04_cp_sat_assignment` and reload the page
@@ -98,13 +81,11 @@ viz/
 
 ## Data note
 
-`data/*.xlsx` and `viz/store-planogram/public/data/assignment.json` contain
-real product/pricing data. Check `.gitignore` before pushing to a public
-remote if that's a concern — see the note there.
+`data/*.xlsx` and `viz/store-planogram/public/data/assignment.json` have product/pricing data that built all coefs etc.
 
-Step 1's inputs and output are now fully included: `tomodel.xlsx`,
+Aşkolar step 1's inputs and output are now fully included: `tomodel.xlsx`,
 `product_arrival.xlsx`, and `saleability_scores_full_M9.xlsx` are all in
 place, so `01_preprocessing_lr` runs end-to-end as-is. Step 2 is
 self-contained (no external inputs) but its outputs (`A_scores.xlsx`,
-`fixture_grid.json`) aren't included yet — run the notebook to generate
+`fixture_grid.json`) aren't included yani run the notebook to generate
 them. See `data/README.md` for column details on each file.
