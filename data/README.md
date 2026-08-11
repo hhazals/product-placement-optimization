@@ -1,6 +1,6 @@
 # Data folders
 
-- **`01_raw/`** — source inputs for Step 1, both ✅ included:
+- **`01_raw/`** — source inputs for Step 1
   - `tomodel.xlsx` — two sheets: `623 product` (601 rows, the training set:
     `ItemOption`, `URUN ALT GRUBU`, `LifeStyleGroup`, `ETIKET`, `ColorGroup`,
     `active_weeks`, `avg_qty_when_active` [target], `size_unique_count`,
@@ -15,7 +15,7 @@
     `LR_Engine.ipynb` assigns synthetic `nd0, nd1, ...` IDs and predicts
     saleability for these.
 - **`02_interim/`** — outputs of Steps 1 & 2:
-  - `saleability_scores_full_M9.xlsx` ✅ included (586 rows, 14 cols — matches
+  - `saleability_scores_full_M9.xlsx` (586 rows, 14 cols — matches
     exactly what Step 4's `PRODUCT_FILE` expects:
     `ItemOption`, `URUN ALT GRUBU`, `LifeStyleGroup`, `ETIKET`, `discount`,
     `saleability_score_full_M9_orig`, plus supporting columns).
@@ -25,12 +25,9 @@
   — see the Step 3 gap noted in the top-level README), `kontrol.xlsx`,
   `assignment.json`.
 
-## Verified provenance
-
 Cross-checked on 2026-08-11: `product_arrival.xlsx` → `saleability_scores_full_M9.xlsx`
 → `lots_with_Aij.xlsx` → `assignment.json`/`kontrol.xlsx` are all from the
-**same generation run** — `ItemOption`s, `saleability_score` values, `lot_ID`s,
-and `L_type_score`s all cross-match exactly (or to rounding precision) across
-files. Safe to treat as one consistent snapshot rather than re-deriving or
-re-running anything to check.
+**same generation run (nefret ediyorum bu kalıptan) ** — `ItemOption`s, `saleability_score` values, `lot_ID`s,
+and `L_type_score`s all match exactly across files. Yani safe to treat as one consistent snapshot rather than re-deriving or
+re-running anything to check. 
 
