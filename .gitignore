@@ -1,0 +1,22 @@
+# --- Python / Jupyter ---
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# --- Node / Vite ---
+viz/store-planogram/node_modules/
+viz/store-planogram/dist/
+
+# --- OS ---
+.DS_Store
+
+# --- Data ---
+# Uncomment if the raw/processed data contains sensitive real store/pricing
+# data you don't want in git history. As set up now, sample data files ARE
+# tracked so the repo is runnable out of the box.
+# data/01_raw/*.xlsx
+# data/02_interim/*.xlsx
+# data/03_processed/*.xlsx
+# viz/store-planogram/public/data/assignment.json
