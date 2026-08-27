@@ -13,9 +13,6 @@ viz/store-planogram/dist/
 .DS_Store
 
 # --- Data ---
-# Uncomment if the raw/processed data contains sensitive real store/pricing
-# data you don't want in git history. As set up now, sample data files ARE
-# tracked so the repo is runnable out of the box.
 # data/01_raw/*.xlsx
 # data/02_interim/*.xlsx
 # data/03_processed/*.xlsx
