@@ -1,3 +1,4 @@
+# Aşko you don't need PNG/JPEG files. The icons are already embedded as SVG strings in the ICONS object.
 import { useState, useEffect, useMemo } from "react";
 
 
