@@ -1,8 +1,8 @@
-# Fashion Retail Product Placement Optimization
+# (Fashion) Retail Product Placement Optimization
 
 Fashion-store product-to-fixture assignment pipeline: predicts item
 saleability, scores fixture locations, optimizes item→lot assignment with
-CP-SAT, and visualizes the resulting planogram.
+CP-SAT and visualizes the resulting planogram.
 
 ## Pipeline
 
