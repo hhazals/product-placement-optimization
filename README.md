@@ -63,6 +63,8 @@ solve, just rerun the last cell of `04_cp_sat_assignment` and reload the page
 — no rebuild needed in dev mode (`npm run build` regenerates the static
 `dist/` bundle for deployment).
 
+<img width="1584" height="1188" alt="c = 1 (2)" src="https://github.com/user-attachments/assets/19aec25d-81ed-4c08-b44c-cba5aa38188b" />
+
 ## Repo layout
 
 ```
