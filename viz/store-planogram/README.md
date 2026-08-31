@@ -1,5 +1,6 @@
 # Store Planogram Viz
-![Uploading c = 1 (2).png…]()
+
+<img width="1584" height="1188" alt="c = 1 (2)" src="https://github.com/user-attachments/assets/f11faa91-bacf-4a49-88ca-fcc5a85b27f9" />
 
 React + Vite app that renders the optimized fixture/lot assignment as an
 interactive store grid → fixture planogram → item detail drill-down.
